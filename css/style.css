@@ -1,0 +1,1852 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body
+{
+    font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+    margin-bottom: 0 auto;
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, h1 ,h2 ,h3, h4, h5, h6 {
+    margin: 0 !important;
+}
+
+.all-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.top-bar
+{
+    background-color: #140567;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.top-bar .top1
+{
+    /* display: flex; */
+}
+
+.top-bar .top1 a{
+    color: #fff;
+    padding: 0 10px;
+}
+
+.top-bar .top1 i 
+{
+    padding: 0 5px 0 0;
+    font-size: 23px;
+    color: yellow;
+}
+
+.top-bar .top1 i:hover
+{
+    color: orange;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.top-bar .top1 p
+{
+    padding-right: 25px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.top-bar .search
+{
+    width: 100%;
+    position: relative
+}
+
+
+.top-bar .searchterm
+{
+    float: left;
+    width: 100%;
+    border: 0px solid #0a0a0a;
+    padding: 10px;
+    height: 30px;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+    color: #6b6b6b;
+}
+
+
+.top-bar .search .button1
+{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 30px;
+    border: 0px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.top-bar .search .button1 i
+{
+    font-size: 20px;   
+}
+
+
+.top-bar .search .button1:hover
+{
+    background-color: orange;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.nav-bar
+{
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 90px;
+    position: relative;
+}
+
+.nav-bar .logo1
+{
+    padding-top: 7px;
+}
+
+
+.nav-bar .logo1 i
+{
+    font-size: 30px;
+    color: orange;
+}
+
+
+.nav-bar .logo1 a
+{
+    text-decoration: none;
+    font-size: 27px;
+    color: black;
+    font-weight: 700;
+    padding-left: 5px
+}
+
+.nav-bar .nav
+{
+    margin-top: 9px;
+}
+
+.nav-bar .nav ul.parent
+{
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+
+}
+
+.nav-bar .nav li a
+{
+    color: black;
+    padding-left: 15px;
+    padding-right: 9px;
+    margin-left: 9px;
+    text-decoration: none;
+}
+
+.nav-bar .nav i
+{
+    font-size: 11px;
+    color: #ada7a7;
+    padding-left: 2px;
+}
+
+.nav-bar .nav .icon1
+{
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.nav-bar .nav .icon1 i
+{
+    color: white;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 1px;
+    padding: 8px 8px 8px 8px;
+    font-size: 16px;
+}
+
+.nav-bar .nav .icon1 i:hover
+{
+    background-color: orange;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+/* dropdown buttn */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+   .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+    .parent li>a:hover  .dropdown-content {display: block;}
+
+
+
+/* sidenav */
+
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+.sidenav a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+  
+.sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.mobile-nav
+{
+    display: none;
+}
+
+.openbtn, .closebtn
+{
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.openbtn
+{
+    color: #000;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1;
+}
+
+.slider
+{
+    width: 100%;
+    height: 500px;
+}
+
+.slide .inner
+{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-color: #1f1f1f;
+}
+
+.slider .heading
+{
+    padding-top: 150px;
+}
+
+.slider .heading h1
+ {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 0;
+ }
+
+ .slider .heading h1 span
+ {
+    color: orange;
+ }
+
+ .slider .heading p
+ {
+    color: #bdbdbd;
+    margin-bottom: 0;
+    font-size: 18px;
+    padding-top: 30px;
+ }
+
+ .slider .heading .button3
+ {
+    margin-top: 60px;
+ }
+
+ .slider .heading .button3 a
+ {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 1px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+ }
+
+ .slider .heading .button3 a:first-child
+ {
+     margin-left: 0;
+ }
+
+ .slider .heading .button3 a:hover
+ {
+    background-color: orange;
+    opacity: 0.5s;
+    transition: 0.5s;
+ }
+
+ .digital
+  {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background-color: white;
+  }
+
+  .digital h1
+  {
+    color: black;
+    margin-bottom: 0;
+    font-size: 45px;
+  }
+
+  .digital h5
+  {
+    color: gray;
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-top: 5px;
+  }
+
+  .digital .button2
+  {
+    margin-top: 30px;
+    float: right;
+  }
+
+  .digital .button2 i
+  {
+    font-size: 30px;
+    background-color: orange;
+    color: white;
+    border: 1px solid;
+    border-radius: 1px;
+    padding: 8px 15px 8px 15px;
+    margin-left: 10px;
+  }
+
+  .digital .button2 i:hover
+  {
+      background-color: #000;
+      opacity: 0.5s;
+      transition: 0.5s;
+  }
+
+  .digital .deling
+  {
+    padding-top: 90px;
+  }
+
+  .digital .deling h6
+  {
+    font-size: 25px;
+  color: black;
+  margin-bottom: 0;
+  }
+
+  .digital .deling i
+  {
+    font-size: 35px;
+    color: orange;
+    padding-right: 10px;
+  }
+
+  .digital .deling p
+  {
+    color: gray;
+    font-size: 15px;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .about
+  {
+    background-color: #032542;
+  }
+
+  .about .color1  
+  {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-color: #efefef;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about .color1 .detail
+  {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .about .color1 .detail h1 
+  {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .about .color1 .detail h1 span
+  {
+      color: orange;
+  }
+
+  .about .color1 .detail p
+  {
+    font-size: 17px;
+    margin-bottom: 0;
+    padding-top: 35px;
+    color: gray;
+  }
+
+  .about .project
+  {
+    margin-top: 50px;
+  }
+
+  .about .project h5
+  {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: black;
+  }
+ 
+  .about .project h6
+  {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: black;
+  }
+
+  .about .pic2
+  {
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    transform: translate(0,-50%);
+  }
+
+  .about .pic2 img
+  {
+      width: 100%;
+  }
+
+
+  .slick-slide:focus
+  {
+     outline: none;
+  }
+
+  .service
+  {
+     padding-top: 10%;
+     padding-bottom: 90px;
+     background-color: #fff;
+  }
+
+   .service .main
+  {
+      text-align: center;
+  } 
+
+.service .main h1
+{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.service .main h1 span
+{
+    color: orange;
+}
+
+.service .main p
+{
+    color: gray;
+    font-size: 15px;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+.service .serve
+{
+    padding-top: 50px;
+}
+
+.service .serve .color2
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    cursor: pointer;
+}
+
+.service .serve .color2:hover
+{
+    background-color: tan;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.service .serve h6
+{
+    font-size: 25px;
+    margin-bottom: 0;
+    color: black;
+}
+
+.service .serve i
+{
+    color: orange;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.service .serve i:hover
+{
+    color: black;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.service .serve p
+{
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 15%;
+}
+
+.need
+{
+    padding-top: 6%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 300px;
+}
+
+.need h1
+{
+    font-size: 28px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.need p
+{
+    color: white;
+    font-size: 17px;
+    padding-top: 15px;
+}
+
+.need .button4
+{
+    margin-top: 40px;
+}
+
+.need .button4 a
+{
+    border: 1px solid orange;
+    border-radius: 1px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    padding: 12px 30px 12px 30px;
+    text-decoration: none;
+}
+
+.need .button4 a:hover
+{
+    color: black;
+    background-color: orange;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.need .pic
+{
+    position: absolute;
+    top: 40%;
+    left: -50px;
+    transform: translate(0,-30%);
+}
+
+.need .pic img
+{
+    width: 100%;
+    margin-left: 50px;
+}
+
+.project
+{
+    padding-top: 5%;
+    padding-bottom: 70px;
+}
+
+.project h3
+{
+    font-size: 35px;
+    margin-bottom: 0;
+    color: black;
+}
+
+.project h3 span
+{
+    color: orange;
+}
+
+.project .all
+{
+    
+}
+
+.project .all ul
+{
+    display: flex;
+    list-style: none;
+    float: right;
+}
+
+.project .all li a
+{
+    border: 1px solid;
+    border-radius: 1px;
+    padding: 10px 15px 10px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: teal;
+    color: white;
+}
+
+.project .all a:hover
+{
+    background-color: orange;
+    opacity: 0.5s;
+    transition: 0.5s;
+}
+
+.project .container1 {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+.project .container1 .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+.project .container1 .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+.project .container1:hover .image {
+    opacity: 0.3;
+  }
+  
+.project .container1:hover .middle {
+    opacity: 1;
+  }
+  
+.project .container1 .text {
+    background-color: orange;
+    color: black;
+    font-size: 14px;
+    padding: 16px 32px;
+    cursor: pointer;
+  }
+
+  /* .meeting
+  {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-color: #e6e5e5;
+  }
+
+  .meeting .bio
+  {
+    background-color: white;
+    margin-top: 20%;
+    margin-bottom: 80px;
+  }
+
+  .meeting  img
+  {
+    width: 10%;
+    height: 100px;
+  }
+
+  .meeting .bio h3
+  {
+      
+  }
+
+  .meeting .bio h6
+  {
+      
+  }
+
+  .meeting .bio .seprator
+  {
+      
+  }
+
+  .meeting .bio p
+  {
+      
+  } */
+
+  .expert
+  {
+    padding-top: 20%;
+    padding-bottom: 80px;
+  }
+
+  .expert h1
+  {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 40px;
+    color: black;
+  }
+
+  .expert h1 span
+  {
+      color: orange;
+  }
+
+  .expert p
+  {
+    padding-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .expert .pic6 
+  {
+    margin-top: 6%;
+  }
+
+  .expert .wrapper h6
+  {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 17px;
+    color: black;
+    padding-top: 10px;
+  }
+
+  .expert .wrapper p
+  {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .expert .wrapper
+  {
+    position: relative;
+    width: 80%;
+  }
+  
+  .expert .wrapper .image 
+  {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .expert .wrapper .middle2 
+  {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .expert .wrapper:hover .image {
+    opacity: 0.3;
+  }
+  
+  .expert .wrapper:hover .middle2 {
+    opacity: 1;
+  }
+  
+  .expert .wrapper i
+  {
+    background-color: orange;
+    color: black;
+    font-size: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+  }
+
+  .question
+  {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: soft-light;
+    background-color: #ececec;
+  }
+
+  .question .heading 
+  {
+    margin-left: 10%;
+    padding-top: 10%;
+  }
+
+  .question .heading h1
+  {
+    font-size: 40px;
+    margin-bottom: 0;
+    color: black;
+  }
+
+  .question .heading h1 span
+  {
+      color: orange;
+  }
+
+  .question .heading p
+  {
+    color: gray;
+    font-size: 15px;
+    padding-top: 15px;
+    margin-bottom: 0;
+  }
+
+  .question .body
+  {
+    margin-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .question .body h3
+  {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .question .body i
+  {
+    border: 1px solid orange;
+    border-radius: 1px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: orange;
+    color: white;
+    margin-right: 9px;
+  }
+
+  .question .body i:hover
+  {
+      background-color: black;
+      color: white;
+      opacity: 0.5s;
+      transition: 0.5s;
+  }
+
+  .question .body p
+  {
+    color: gray;
+    font-size: 15px;
+    padding-left: 12%;
+    margin-bottom: 0;
+  }
+
+  .question .color-3
+  {
+    background-color: orange;
+    padding-top: 5%;
+  }
+
+  .question .color-3 .appoint h1
+  {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .question .color-3 .appoint p
+  {
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  .question .input
+  {
+    margin-left: 15px;
+  }
+
+  .question .input .form
+  {
+    padding-top: 20%;
+  }
+
+  .question input
+  {
+    background-color: #e89600;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 0 10px 10px;
+    border: 1px solid orange;
+    width: 80%;
+  }
+
+  .question .msg 
+  {
+    padding-top: 10%;
+  }
+
+  .question .msg textarea
+  {
+    width: 90%;
+    background-color: #e89600;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 0 10px 10px;
+    border: 1px solid orange;
+  }
+
+  .question input::placeholder, .question textarea::placeholder
+  {
+    color: rgb(129, 129, 129);
+  }
+  
+  .button5
+  {
+    margin-top: 10%;
+    margin-left: 20px;
+  }
+
+  .button5 a
+  {
+    border: 1px solid #02028e;
+    border-radius: 2px;
+    padding: 10px 40px 10px 40px;
+    color: white;
+    background-color: #00002f;
+  } 
+
+  .button5 a:hover
+  {
+      background-color: white;
+      color: black;
+      opacity: 0.5s;
+      transition: 0.5s;
+  }
+
+  .pricing
+  {
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .pricing .wrapper
+  {
+    padding-left: 0;
+    padding-right: 0px;
+    padding-top: 5%;
+  }
+
+  .pricing .main-1 
+  {
+    text-align: center;
+  }
+
+  .pricing .main-1 h1
+  {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .pricing .main-1 h1 span
+  {
+      color: orange;
+  }
+
+  .pricing .main-1 p
+  {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-top: 5px;
+  }
+
+  .pricing .price1 
+  {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-color: white;
+    box-shadow: 3px 1px 9px;
+  }
+
+  .pricing .price1 .icon1
+  {
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .pricing .price1 .icon1 img
+  {
+    width: 90px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -3px;
+  }
+
+  .pricing .price1 .icon1:hover
+  {
+    background-color: orange;
+    opacity: 0.5s;
+    transition: 0.5s;
+  }
+
+  .pricing .heading1
+  {
+    padding-top: 15%;
+  }
+
+  .pricing .heading1 h4
+  {
+    text-align: center;
+    margin-bottom: 0;
+    color: orange;
+    font-size: 20px;
+  }
+
+  .pricing .heading1 h3
+  {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 25px;
+  }
+
+  .pricing .intro1
+  {
+    text-align: center;
+    border-bottom: 2px dashed #ccc;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .pricing .intro1 i.fas fa-times
+  {
+    color: red;
+  }
+
+  .pricing .intro1 p
+  {
+    margin: 0;
+    display: inline-block;
+    padding-left: 8px;
+    font-weight: 600;
+    font-family: raleway;
+    padding-top: 30px;
+  }
+
+  .pricing .button6
+  {
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  .pricing .button6 a
+  {
+    border: 1px solid orange;
+    border-radius: 2px;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+  }
+
+  .pricing .button6 a:hover
+  {
+    background-color: #00002f;
+    color: white;
+    opacity: 0.5s;
+    transition: 0.5s;
+  }
+
+  .recent
+  {
+    background-color: gainsboro;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .recent h1
+  {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .recent h1 span
+  {
+      color: orange;
+  }
+
+  .recent p
+  {
+    color: #676767;
+    font-size: 15px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .recent .button7 
+  {
+    padding-top: 10px;
+  }
+
+  .recent .button7 i
+  {
+    border: 1px solid orange;
+    border-radius: 2px;
+    font-size: 30px;
+    color: black;
+    background-color: orange;
+    padding: 8px 15px 8px 15px;
+    margin-right: 10px;
+  }
+
+  .recent .button7 i:hover
+  {
+    background-color: black;
+    color: orange;
+    opacity: 0.5s;
+    transition: 0.5s;
+  }
+
+  .recent .news
+  {
+    padding-top: 5%;
+  }
+ 
+  .recent .news .pic1
+  {
+    position: relative;
+  }
+
+  .recent .news .pic1 img
+  {
+    width: 100%;
+  }
+
+  .recent .news:hover .pic1 .colorDiv
+  {
+    opacity: .7;
+    width: 100%;
+  }
+
+  .recent .news .colorDiv{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    opacity: 0;
+    width: 0;
+    transition: all 0.7s ease 0s;
+    position: absolute;
+    top: 0;
+  }
+
+  /* .recent .button8
+  {
+
+  } */
+
+  .recent .button8 a
+  {
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: orange;
+    color: black;
+    padding: 10px 25px 10px 25px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .recent .button8 a:hover
+  {
+      background-color: #00002f;
+      color: white;
+      transition: 0.5s;
+      opacity: 0.5s;
+  }
+
+  .recent .news .queew
+  {
+    background-color: white;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+
+  .recent .news .queew h4
+  {
+    font-size: 25px;
+    margin-bottom: 0;
+    color: black;
+  }
+
+  .recent .news .queew p
+  {
+    border-bottom: dashed #e6e6e6;
+    padding-bottom: 5%;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5%;
+  }
+
+  .recent .news .queew i
+  {
+    padding-right: 20px;
+    color: orange;
+    font-size: 15px;
+  }
+
+  .recent .news .queew h6
+  {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-left: 5px;
+    color: black;
+    font-family: fantasy;
+    padding-top: 50%;
+  }
+
+  .client
+  {
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .client h1
+  {
+    font-size: 40px;
+    margin-bottom: 0;
+    color: black;
+  }
+
+  .client p
+  {
+    font-size: 15px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    color: grey;
+  }
+
+  .client .company .admin-carousel
+  {
+    padding-top: 5%;
+  }
+
+  .client .company .admin-carousel .button9
+  {
+    height: 86px;
+    border: 1px solid #cecece;
+  }
+
+  .client .company .admin-carousel .button9 a img
+  {
+    margin: auto;
+    display: block;
+    padding-top: 5%;
+  }
+
+  .client .company .admin-carousel .button9:hover
+  {
+    border: 1px solid orange;
+    opacity: 0.5s;
+    transition: 0.5s;
+  }
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1920px) 
+{
+    .openbtn
+    {
+        display: none;
+    }
+
+    .nav-bar .nav li a
+    {
+        padding-left: 2px;
+        padding-right: 5px;
+    }
+
+    
+
+
+
+    
+}
+
+@media screen and (max-width: 1366)
+{
+
+
+} 
+
+@media screen and (max-width: 768px)
+{
+        
+    .nav-bar .nav
+    {
+        display: none;
+    }
+
+    .openbtn
+    {
+        display: block;
+    }
+
+    
+    .mobile-nav
+    {
+        display: block;
+    }
+
+    .slider .inner
+    {
+        height: 550px;
+    }
+
+    .slider .heading .button3
+    {
+        margin-top: 40px;
+    }
+
+    .digital
+    {
+        padding-top: 20%;
+    }
+
+    .digital h1 
+    {
+        font-size: 43px;
+    }
+
+    .digital h5 
+    {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+
+    .digital .button2 i
+    {
+        font-size: 22px;
+        padding: 8px 10px 8px 10px;
+    }
+
+    .digital .deling h6
+    {
+        font-size: 18px;
+    }
+
+
+    .about .color1 .detail h1
+    {
+        font-size: 35px;
+    }
+
+    .about .color1 .detail p
+    {
+        font-size: 14px;
+    }
+
+    .about .project h6
+    {
+        padding-top: 15px;
+        font-size: 17px;
+    }
+
+    .service .serve h6
+    {
+        font-size: 16px;
+    }
+
+    .service .serve i
+    {
+        font-size: 24px;
+        padding-right: 6px;
+    }
+
+    .need .pic img
+    {
+        margin-left: 30px;
+    }
+
+    .question input
+    {
+        padding: 5px 0px 5px 10px;
+        width: 90%;
+    }
+
+    .question .input .form
+    {
+        padding-top: 40%;
+    }
+
+    .question .msg
+    {
+        padding-top: 20%;
+    }
+
+    .question .msg textarea
+    {
+        width: 95%;
+    }
+
+    .button5
+    {
+        margin-top: 25%;
+    }
+
+    .pricing .intro1 p
+    {
+        font-size: 14px;
+    }
+
+    .recent .button7 i
+    {
+        font-size: 20px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .recent .news .queew h4
+    {
+        font-size: 19px;
+    }
+
+    .recent .news .queew p
+    {
+        font-size: 13px;
+    }
+
+    .recent .news .queew i
+    {
+        padding-right: 10px;
+        font-size: 15px;
+    }
+
+
+
+} 
+
+@media screen and (max-width: 600px)
+{
+    
+
+    .logo1
+    {
+        text-align: center;
+    }
+
+    .top-bar
+    {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    
+    .top-bar .search
+    {
+        width: 90%;
+        padding-top: 20px;
+        display: block;
+        margin: auto;
+    }
+
+    .nav-bar .logo1 i
+    {
+        font-size: 35px;
+    }
+
+    .nav-bar .logo1 a 
+    {
+        font-size: 30px;
+    }
+    .openbtn
+    {
+        display: block;
+    }
+
+    /* .slider
+    {
+        height: 600px;
+    } */
+
+    .slider .heading h1
+    {
+        font-size: 35px;
+        padding-left: 40px;
+        padding-right: 10px;
+        color: white;
+    }
+
+    .slider .heading p 
+    {
+        padding-left: 15px;
+        padding-right: 10px;
+        font-size: 16px;
+    }
+
+    .slider .heading .button3
+    {
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .slide .inner
+    {
+        height: 620px;
+    }
+
+    .digital 
+    {
+        padding-top: 40%;
+    }
+
+
+    .digital h1
+    {
+        font-size: 35px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .digital h5
+    {
+        font-size: 17px;
+        padding-top: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .digital .deling
+    {
+        padding-top: 50px;
+    }
+    
+    .about .row, .slider .row
+    {
+        margin: 0;
+    }
+
+    .about
+    {
+        height: 1190px;
+    }
+
+    .about .color1 .detail p 
+    {
+        font-size: 14px;
+    }
+
+    .about .pic2
+    {
+        left: -1%;
+    }
+
+    .about .pic2 img 
+    {
+        margin-top: 60%;
+    }
+
+
+    .service
+    {
+        padding-top: 30%;
+    }
+
+    .service .main p
+    {
+        font-size: 15px;
+        padding-top: 25px;
+    }
+
+    .need
+    {
+        padding-top: 35%;
+        height: 650px;
+    }
+
+    .need h1
+    {
+        font-size: 23px;
+        padding-left: 15px;
+        padding-right: 16px;
+        text-align: center;
+    }
+
+    .need p
+    {
+        font-size: 15px;
+        padding-top: 20px;
+        padding-left: 18px;
+        padding-right: 10%;
+        text-align: center;
+    }
+
+
+    .need .button4
+    {
+        margin-top: 20%;
+        margin-left: 30%;
+    }
+
+    .need .pic
+    {
+        left: -10px;
+        transform: translate(0,40%);
+    }
+
+    .need .pic img
+    {
+        margin-left: 10px;
+    }
+
+    .project 
+    {
+        padding-top: 15%;
+        text-align: center;
+    }
+
+    .expert h1
+    {
+        font-size: 30px;
+    }
+
+    .expert p
+    {
+        padding-top: 10px;
+        font-size: 12px;
+    }
+
+    .expert .wrapper
+    {
+        height: 300px;
+        margin-left: 11%;
+        margin-top: 15%;
+    }
+
+    .question .input .form 
+    {
+        padding-top: 5%;
+    }
+
+    .question .color-3
+    {
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+
+    .pricing
+    {
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+
+    .pricing .main-1 p
+    {
+        padding-top: 10px;
+    }
+
+    .pricing .wrapper
+    {
+        padding-top: 10px;
+    }
+
+    .recent
+    {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .recent .button7
+    {
+        padding-top: 20px;
+        float: right;
+    }
+
+    .recent .news
+    {
+        padding-top: 10%;
+    }
+
+
+
+    
+
+
+
+} 
+
+@media screen and (max-width: 425px)
+{
+
+} 
+
+@media screen and (max-width: 375px) 
+{
+    
+
+}
+
+
+
+
+
+
+
+
+
